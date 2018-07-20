@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+  </head>
+  <body>
+  
+    <script>
+      var xhr = new XMLHttpRequest()
+      xhr.open('GET','',true)
+      xhr.send()
+      xhr.addEventListener('load',function(){
+        if((xhr.status > 200 && xhr.status < 300) || xhr.status === 304){
+          var data = xhr.responseText
+          console.log(data)
+        }
+      })
+    </script>
+  </body>
+</html>
