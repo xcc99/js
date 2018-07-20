@@ -6,7 +6,7 @@
   
     <script>
       var xhr = new XMLHttpRequest()
-      xhr.open('GET','',true)
+      xhr.open('GET','/js/user.json',true)
       xhr.send()
       xhr.addEventListener('load',function(){
         if((xhr.status > 200 && xhr.status < 300) || xhr.status === 304){
